@@ -1,0 +1,56 @@
+@import '../assets/fonts/galano/stylesheet.css';
+.home {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../assets/img/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .container-ps {
+  max-width: 80%;
+}
+.home .areas {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0;
+  margin-left: -32px;
+}
+.home .areas-item {
+  position: relative;
+}
+.home .areas-item:not(:last-child) {
+  margin-right: 128px;
+}
+.home .areas-item-content {
+  width: 250px;
+  height: auto;
+  word-wrap: break-word;
+  font-family: "GalanoGrotesque";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.home .areas-item-content-title {
+  font-size: 98px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 1;
+  margin-bottom: 0;
+}
+.home .areas-item-content-1 {
+  width: 364px;
+  right: -140px;
+}
+.home .areas-item-content-2 {
+  width: 270px;
+  right: -64px;
+}
+
+/*# sourceMappingURL=main.css.map */
