@@ -9,3 +9,11 @@ Template desenvolvido para o I CoMCe. Esta versão é estática e ainda não est
 ```
 npm install --save bootstrap
 ```
+
+*Slick Carousel 1.8.1*
+
+```
+npm install --save slick-carousel
+```
+
+Tema desenvolvido por [Lucas Weiby] (https://lucasweiby.github.io)
