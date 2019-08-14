@@ -1,0 +1,42 @@
+.slider {
+    padding: 64px 0;
+    &-programacao {
+        &-slide {
+            width: 100%;
+            height: 256px;
+            border-radius: 8px;
+            position: relative;
+            background-image: url('../assets/img/gestão-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-color: $blue;
+            background-blend-mode: multiply;
+            &-content {
+                position: absolute;
+                bottom: 16px;
+                left: 20px;
+                &-name {
+                    text-transform: uppercase;
+                    font-family: $galano;
+                    color: #fff;
+                    margin-bottom: 0;
+                    display: block;
+                    // line-height: 1;
+                }
+            }
+        }
+        .bg2 {
+            background-image: url('../assets/img/conhecimento-bg.jpg');
+            background-color: $green;
+        }
+        .bg3 {
+            background-image: url('../assets/img/solução-bg.jpg');
+            background-color: $yellow;
+        }
+        .slick-slide {
+            &:not(:last-child) {
+                margin-right: 8px;
+            }
+        }
+    }
+}

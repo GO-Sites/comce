@@ -1,0 +1,26 @@
+.numbers {
+    padding: 64px 0;
+    &-box {
+        text-align: center;
+        font-family: $galano;
+        color: $grey;
+        @include mobile {
+            &:not(:last-child) {
+                margin-bottom: 32px;
+            }
+        }
+        &-number {
+            font-weight: 700;
+            // margin-bottom: 0;
+            line-height: 1;
+            text-transform: uppercase;
+        }
+        &-detail {
+            font-weight: 400;
+            text-transform: uppercase;
+            line-height: 1;
+            margin-bottom: 0;
+            display: block;
+        }
+    }
+}

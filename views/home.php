@@ -24,17 +24,17 @@
                 </div>
             </li>
         </ul>
-        <ul class="areas show-mobile">
-            <li class="areas-item">
+        <div class="areas show-mobile slide-areas">
+            <div class="areas-item">
                 <img src="assets/img/gestão-mobile.png" class="img-fluid">
-            </li>
-            <li class="areas-item">
+            </div>
+            <div class="areas-item">
                 <img src="assets/img/conhecimento-mobile.png" class="img-fluid">
-            </li>
-            <li class="areas-item">
+            </div>
+            <div class="areas-item">
                 <img src="assets/img/solucao-mobile.png" class="img-fluid">
-            </li>
-        </ul>
+            </div>
+        </div>
         <div class="home-info">
             <ul class="home-info-list">
                 <li class="home-info-list-item left">

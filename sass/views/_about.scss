@@ -1,0 +1,104 @@
+.about {
+    .box {
+        width: 512px;
+        height: 512px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include mobile {
+            width: 100%;
+        }
+        .logo-part {
+            width: 300px;
+            position: absolute;
+        }
+        .blue {
+            bottom: 0;
+            left: 96px;
+            z-index: 2;
+            animation-name: blue;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-play-state: running;
+            @include mobile {
+                left: 24px;
+            }
+        }
+        .green {
+            top: 50px;
+            left: 64px;
+            z-index: 3;
+            animation-name: green;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-play-state: running;
+            @include mobile {
+                left: 15px;
+            }
+        }
+        .yellow {
+            top: 8px;
+            left: 112px;
+            z-index: 1;
+            animation-name: yellow;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-play-state: running;
+            @include mobile {
+                left: 32px;
+            }
+        }
+    }
+    &-text {
+        font-family: $galano;
+    }
+}
+
+@keyframes blue {
+    0% {
+      transform: translate(0%, 0%);
+    }
+    25% {
+      transform: translate(-2%, -2%);
+    }
+    50% {
+      transform: translate(2%, -4%);
+    }
+    100% {
+      transform: translate(0%, 0%);
+    }
+  }
+  
+@keyframes green {
+    0% {
+      transform: translate(0%, 0%);
+    }
+    25% {
+      transform: translate(2%, -2%);
+    }
+    50% {
+      transform: translate(4%, 2%);
+    }
+    100% {
+      transform: translate(0%, 0%);
+    }
+  }
+  
+@keyframes yellow {
+    0% {
+      transform: translate(0%, 0%);
+    }
+    25% {
+      transform: translate(4%, 2%);
+    }
+    50% {
+      transform: translate(-2%, 4%);
+    }
+    100% {
+      transform: translate(0%, 0%);
+    }
+}

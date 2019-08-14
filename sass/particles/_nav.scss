@@ -5,9 +5,15 @@
     .navbar {
         background-color: transparent;
         padding: 32px 64px;
+        @include mobile {
+            padding: 16px;
+        }
         &-brand {
             &-img {
                 height: 64px;
+                @include mobile {
+                    height: 56px;
+                }
             }
         }
         &-nav {
