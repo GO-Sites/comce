@@ -1,4 +1,31 @@
 @import '../assets/fonts/galano/stylesheet.css';
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 9999;
+}
+.header .navbar {
+  background-color: transparent;
+  padding: 32px 64px;
+}
+.header .navbar-brand-img {
+  height: 64px;
+}
+.header .navbar-nav {
+  width: 100%;
+  justify-content: flex-end;
+}
+.header .navbar-nav .nav-link {
+  color: #fff;
+  font-family: "GalanoGrotesque";
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: all 0.1s ease-in-out;
+}
+.header .navbar-nav .nav-link:hover {
+  color: #F49B23;
+}
+
 .home {
   width: 100%;
   min-height: 100vh;
@@ -9,23 +36,28 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .home .container-ps {
   max-width: 80%;
 }
 .home .areas {
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: center;
   list-style: none;
   padding-left: 0;
-  margin-left: -32px;
 }
 .home .areas-item {
   position: relative;
 }
 .home .areas-item:not(:last-child) {
   margin-right: 128px;
+}
+@media screen and (max-width: 767px) {
+  .home .areas-item:not(:last-child) {
+    margin-right: 0;
+  }
 }
 .home .areas-item-content {
   width: 250px;
@@ -34,7 +66,7 @@
   font-family: "GalanoGrotesque";
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: -32px;
 }
 .home .areas-item-content-title {
   font-size: 98px;
@@ -51,6 +83,77 @@
 .home .areas-item-content-2 {
   width: 270px;
   right: -64px;
+}
+.home-info {
+  width: 100%;
+  height: auto;
+  margin-top: 32px;
+}
+.home-info-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.home-info-list-item {
+  width: 150px;
+}
+.home-info-list-item:not(:last-child) {
+  margin-right: 16px;
+  border-right: 2px solid #fff;
+  padding-right: 16px;
+}
+.home-info-list-item-text {
+  font-family: "GalanoGrotesque";
+  font-weight: 600;
+  color: #fff;
+}
+.home-info-list .left {
+  text-align: right;
+}
+.home-icon {
+  position: absolute;
+  width: 100%;
+  bottom: 32px;
+  left: 0;
+}
+.home-icon-img {
+  display: block;
+  margin: 0 auto;
+  width: 32px;
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+.home .show-mobile {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .home .show-mobile {
+    display: flex;
+  }
+}
+.home .show-desktop {
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .home .show-desktop {
+    display: none;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

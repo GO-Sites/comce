@@ -1,3 +1,5 @@
+@import '../particles/nav';
+
 .home {
     width: 100%;
     min-height: 100vh;
@@ -8,20 +10,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     .container-ps {
         max-width: 80%;
     }
     .areas {
-        width: 100%;
+        width: 90%;
         display: flex;
         justify-content: center;
         list-style: none;
         padding-left: 0;
-        margin-left: -32px;
+        // margin-left: -32px;
         &-item {
             position: relative;
             &:not(:last-child) {
                 margin-right: 128px;
+                @include mobile {
+                    margin-right: 0;
+                }
             }
             &-content {
                 width: 250px;
@@ -30,7 +36,7 @@
                 font-family: $galano;
                 position: absolute;
                 bottom: 0;
-                right: 0;
+                right: -32px;
                 &-title {
                     font-size: 98px;
                     font-weight: 600;
@@ -49,5 +55,75 @@
                 right: -64px;
             }
         }
+    }
+    &-info {
+        width: 100%;
+        height: auto;
+        margin-top: 32px;
+        &-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            &-item {
+                width: 150px;
+                &:not(:last-child) {
+                    margin-right: 16px;
+                    border-right: 2px solid #fff;
+                    padding-right: 16px;
+                }
+                &-text {
+                    font-family: $galano;
+                    font-weight: 600;
+                    color: #fff;
+                }
+            }
+            .left {
+                text-align: right;
+            }
+        }
+    }
+    &-icon {
+        position: absolute;
+        width: 100%;
+        bottom: 32px;
+        left: 0;
+        &-img {
+            display: block;
+            margin: 0 auto;
+            width: 32px;
+            animation-name: bounce;
+            animation-duration: 1s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            // animation-direction: alternate;
+        }
+    }
+
+    .show-mobile {
+        display: none;
+        @include mobile {
+            display: flex;
+        }
+    }
+
+    .show-desktop {
+        display: flex;
+        @include mobile {
+            display: none;
+        }
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(8px);
+    }
+    100% {
+        transform: translateY(0px);
     }
 }
