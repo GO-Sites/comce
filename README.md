@@ -16,4 +16,4 @@ npm install --save bootstrap
 npm install --save slick-carousel
 ```
 
-Tema desenvolvido por [Lucas Weiby] (https://lucasweiby.github.io)
+Tema desenvolvido por [Lucas Weiby](https://lucasweiby.github.io)
