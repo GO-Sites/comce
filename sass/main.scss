@@ -6,9 +6,28 @@
 @import 'views/numbers';
 @import 'views/about';
 @import 'views/slider';
+@import 'views/exhibitor';
+@import 'footer';
+
+html,
+body {
+    font-family: $galano;
+    scroll-behavior: smooth;
+}
 
 b {
     font-weight: 600;
+}
+
+.title {
+    font-weight: 600;
+    text-transform: uppercase;
+    border-left: 8px solid $purple;
+    padding-left: 8px;
+    color: $grey;
+    @include mobile {
+        font-size: 32px;
+    }
 }
 
 .btn-comce {

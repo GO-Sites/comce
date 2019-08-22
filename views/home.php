@@ -50,7 +50,7 @@
             </ul>
         </div>
         <div class="home-icon">
-            <img src="assets/icons/down.svg" class="home-icon-img">
+            <a href="#numbers" class="link"><img src="assets/icons/down.svg" class="home-icon-img"></a>
         </div>
     </div>
 </section>
