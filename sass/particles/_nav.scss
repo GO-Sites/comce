@@ -8,6 +8,26 @@
         @include mobile {
             padding: 16px;
         }
+        &-toggler {
+            width: 48px;
+            height: 48px;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i {
+                color: #fff;
+            }
+        }
+        &-collapse {
+            background-color: $grey;
+            text-align: center;
+            padding: 32px 0;
+            box-shadow: 0 0 10px rgba(#000000, 0.2);
+            border-bottom: 4px solid $purple;
+            transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
         &-brand {
             &-img {
                 height: 64px;
