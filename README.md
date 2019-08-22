@@ -1,8 +1,8 @@
 # Template - I CoMCe
 
-Template desenvolvido para o I CoMCe. Esta versão é estática e ainda não está dinamizada para a plataforma Wordpress.
+This template have been developed for to I CoMCe, an APRECE congress. This is the static version and isn't dinamized for WordPress platform yet.
 
-**Dependencias necessárias**
+**Required dependencies**
 
 *Bootstrap 4.3.1*
 
@@ -16,4 +16,4 @@ npm install --save bootstrap
 npm install --save slick-carousel
 ```
 
-Tema desenvolvido por [Lucas Weiby](https://lucasweiby.github.io)
+Theme developed by [Lucas Weiby](https://lucasweiby.github.io)
